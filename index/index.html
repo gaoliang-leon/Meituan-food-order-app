@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meituan Takeaway Platform</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <script type="text/javascript">
+        (function(){
+            var docEl=document.documentElement;
+            //set rem standard
+            function setRemUnit(){
+                var rem=docEl.clientWidth/10;
+                docEl.style.fontSize=rem+"px";
+            }
+            setRemUnit();
+            //reset rem standard when window size changes
+            window.addEventListener("resize",setRemUnit);
+            //when page shows at current screen, if use cache data, reset rem
+            window.addEventListener("pageshow",function(ev){
+                if(ev.persisted){
+                    setRemUnit();
+                }
+            })
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="../lib/reset.css">
+    <link rel="stylesheet" type="text/css" href="header/header.css">
+</head>
+<body>
+    <!-- header start -->
+    <div class="header">
+        <div class="searchbar">
+            <div class="searchbar-location">
+                <div class="location-icon"></div>
+                <p class="location-text">Toronto</p>
+            </div>
+            <div class="searchbar-input-wrap">
+                <div class="input-icon"></div>
+                <input type="text" class="searchbar-input" placeholder="chicken wing"></input>
+            </div>  
+                
+        </div>
+        <img class="header-bgimg" src="https://app.nihaoshijie.com.cn/upload/bannertemp.e8a6fa63.jpg" alt="download">
+    </div>
+    <!-- header end -->
+</body>
+</html>
