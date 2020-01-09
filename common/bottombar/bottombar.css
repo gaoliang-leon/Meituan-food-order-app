@@ -1,0 +1,48 @@
+.bottombar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.333333rem;
+    display: flex;
+    border-top: 0.026667rem solid #b6b6b6;
+    background-color: rgba(246,246,246,0.95);
+}
+.bottombar .bottombar-item{
+    flex:1;
+    font-size: 0.293333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+.bottombar .bottombar-item-icon{
+    margin-bottom: 0.106667rem;
+    width: 0.666667rem;
+    height: 0.666667rem;
+}
+.bottombar .index .bottombar-item-icon{
+    background-size: cover;
+    background-image: url(img/homeIcon.png);
+}
+.bottombar .order .bottombar-item-icon{
+    background-size: cover;
+    background-image: url(img/orderIcon.png);
+}
+.bottombar .my .bottombar-item-icon{
+    background-size: cover;
+    background-image: url(img/myIcon.png);
+}
+/*两个选择器之间不加空格表示选择同时有这两个选择器的元素*/
+.bottombar .index.active .bottombar-item-icon{
+    color: #000;
+    background-image: url(img/homeIconActive.png);
+}
+.bottombar .order.active .bottombar-item-icon{
+    color: #000;
+    background-image: url(img/orderIconActive.png);
+}
+.bottombar .my.active .bottombar-item-icon{
+    color: #000;
+    background-image: url(img/myIconActive.png);
+}

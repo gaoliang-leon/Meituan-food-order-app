@@ -1,0 +1,87 @@
+.order-list{
+    padding-bottom: 2.666667rem;
+}
+.order-item{
+    border-top: 0.346667rem solid #efefef;
+}
+.order-item .order-detail{
+    display: flex;
+    padding-bottom: 0.48rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.order-item .order-item-pic{
+    width: 1.066667rem;
+    height: 1.066667rem;
+    margin-top: 0.213333rem;
+    margin-left: 16px;
+    display: block;
+    border-radius: 50%;
+}
+.order-item .order-item-desc{
+    flex:1;
+    margin-left: 0.4rem;
+    font-size: 0.373333rem;
+}
+.order-item-desc .item-top{
+    height: 1.466667rem;
+    padding-top: 0.053333rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.order-item-desc .item-title{
+    font-size: 0.426667rem;
+    width: 4.8rem;
+    height: 0.533333rem;
+    font-weight: 600;
+}
+
+.order-item-desc .arrow{
+    width: 0.213333rem;
+    height: 0.213333rem;
+    border:1px solid #999;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.order-item-desc .order-status{
+    font-size: 0.373333rem;
+    margin-left: 0.373333rem;
+    color: #999;
+}
+.order-item .product-item{
+    font-size: 0.373333rem;
+    color: #666;
+    margin-top: 0.32rem;
+}
+.order-item .product-count{
+    float: right;
+    margin-right: 0.4rem;
+}
+.order-item .product-total-count{
+    float: right;
+    margin-right: 0.4rem;
+    font-size: 0.32rem;
+}
+.order-item .total-price{
+    font-size: 0.373333rem;
+    color: #151515;
+    margin-left: 0.053333rem;
+    font-weight: 600;
+    letter-spacing: 0.026667rem;
+}
+.order-item .comment{
+    padding: 0.266667rem 0;
+}
+.order-item .comment .comment-btn{
+    float: right;
+    width: 2.666667rem;
+    height: 0.853333rem;
+    color: #6b450a;
+    background-color: #ffd161;
+    font-size: 0.373333rem;
+    line-height: 0.853333rem;
+    text-align: center;
+    margin-right: 0.266667rem;
+}

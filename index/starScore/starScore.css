@@ -1,0 +1,15 @@
+.item-score .star{
+    height: 0.266667rem;
+    width:0.266667rem;
+    float: left;
+    background-size: cover;
+}
+.item-score .fullstar{
+    background-image: url(img/fullstar.png);
+}
+.item-score .halfstar{
+    background-image: url(img/halfstar.png);
+}
+.item-score .nullstar{
+    background-image: url(img/gray-star.png);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <script type="text/javascript">
+        (function(){
+            var docEl=document.documentElement;
+            //set rem standard
+            function setRemUnit(){
+                var rem=docEl.clientWidth/10;
+                docEl.style.fontSize=rem+"px";
+            }
+            setRemUnit();
+            //reset rem standard when window size changes
+            window.addEventListener("resize",setRemUnit);
+            //when page shows at current screen, if use cache data, reset rem
+            window.addEventListener("pageshow",function(ev){
+                if(ev.persisted){
+                    setRemUnit();
+                }
+            })
+        })();
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="../lib/reset.css">
+    <link rel="stylesheet" type="text/css" href="header/header.css">
+    <link rel="stylesheet" type="text/css" href="content/content.css">
+    <link rel="stylesheet" type="text/css" href="../common/bottombar/bottombar.css">
+</head>
+<body>
+    <!-- header start -->
+    <div class="header">订单</div>
+    <!-- header end -->
+
+    <!-- order list start-->
+    <div class="order-list"></div>
+    <!-- order list end-->
+    <!-- bottombar start -->
+    <div class="bottombar"></div>
+    <!-- bottombar end -->
+
+    <script src="../lib/jquery.min.js" type="text/javascript"></script>
+    <script src="../common/bottombar/bottombar.js" type="text/javascript"></script>
+    <script src="content/content.js" type="text/javascript"></script>
+</html>

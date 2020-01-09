@@ -1,0 +1,106 @@
+.list-content{
+    overflow: hidden;
+    padding-bottom: 1.333333rem;
+}
+.list-content .list-title{
+    font-size: 0.43rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.37rem 0 0.133rem;
+}
+.list-content .title-line{
+    display: inline-block;
+    height: 0.026667rem;
+    border-bottom:0.026667rem solid #949494;
+    width: 0.6rem;
+    margin: 0 0.206667rem;
+}
+.list-content .list-wrap{
+
+}
+
+.list-content .content-item{
+    padding: 0.4rem 0.266667rem;
+    color: #656565;
+    display: flex;
+    font-size: 0.5rem;
+    position: relative;
+}
+.content-item .item-img{
+    width: 2.293333rem;
+    height: 1.733333rem;
+    border:0.026667rem solid #e4e4e4;
+}
+.content-item .item-info{
+    flex: 1;
+    margin-left: 0.186667rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-item .brand{
+    position: absolute;
+    top:0.466667rem;
+    left: 0.3167rem;
+    font-size: 0.32rem;
+    color: #fff;
+}
+.content-item .brand-pin{
+    background-color: #ffa627;
+}
+.content-item .brand-new{
+    background-color: #21c56c;
+}
+.content-item .item-title{
+    margin-top: 0.08rem;
+    font-size: 0.426667rem;
+    font-weight: 500;
+    color: #333;
+}
+.content-item .item-desc{
+    margin-top: 0.346667rem;
+    font-size: 0.32rem;
+}
+.content-item .item-count{
+    float: left;
+    margin-left: 0.133333rem;
+}
+.content-item .item-time{
+    float: right;
+}
+.content-item .item-distance{
+    float: right;
+}
+.content-item .item-minPrice{
+    margin-top: 0.266667rem;
+    font-size: 0.32rem;
+    height: 0.64rem;
+}
+.content-item .item-score{
+    float: left;
+}
+.content-item .item-promotion{
+    color: #898989;
+    margin-top: 0.186667rem;
+    font-size: 0.32rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item .promotion-item{
+    display: flex;
+    margin-bottom: 0.08rem;
+}
+
+.content-item .promotion-icon{
+    height: 0.373333rem;
+    width: 0.373333rem;
+}
+.content-item .promotion-item-info{
+    margin-left: 0.08rem;
+    height: 0.373333rem;
+    width: 6.133333rem;
+}

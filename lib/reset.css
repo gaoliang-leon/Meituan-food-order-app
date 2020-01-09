@@ -113,3 +113,27 @@ input{
 
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }
+
+/*clear float*/
+.clearfix::after{
+    content: "";
+    overflow: hidden;
+    display: block;
+    clear: both;
+    zoom:1;
+}
+
+/*单行显示*/
+.one-line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*hide*/
+.hide{
+    display: none;
+}
+
+body{
+    font-family: microsoft yahei UI;
+}
