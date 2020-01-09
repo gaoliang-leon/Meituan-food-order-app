@@ -24,6 +24,7 @@
             console.log(data);
             var list=data.data.poilist||[];
             initContentList(list);
+            toMenu();
         })
     };
 
@@ -101,6 +102,13 @@
 
             $(".list-wrap").append(str);
         });     
+    }
+
+    //跳转到menu
+    function toMenu(){
+        $('.content-item').on('click','.item-info',function(){
+            window.location.href="../../menu/menu.html";
+        })
     }
 
     function init(){
